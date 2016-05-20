@@ -23,9 +23,22 @@
 
 	<!-- to-do main container -->
 	<section class="todo-main-container">
-		<div id="newList"></div>
+		<div class="progress-box">
+			<h3>To Do's</h3>
+			<div id="newList"></div>
+		</div>
 
 		<!--Add progress-box from the reademe-->
+
+		<div class="progress-box">
+			<h3>In Progress</h3>
+			<ul class="list-group" id="currentList"></ul>
+		</div>
+
+		<div class="progress-box">
+			<h3>Complete</h3>
+			<ul class="list-group" id="archivedList"></ul>
+		</div>
 	</section>
 
 	<!-- FORM -->
@@ -34,7 +47,7 @@
 		<div  class="form-input-container">
 			<img id="cancel" src="./img/icons/cross.png" alt="close form icon">
 			<input id="newItemInput" class="todo-title-input form-input" type="text" placeholder="To-Do Title">
-			<button  id="saveNewItem" class="complete-todo-button">Add To Do</button>
+			<button  id="saveNewItem" class="complete-todo-button">Save</button>
 		</div>
 	</section>
 
@@ -47,6 +60,7 @@
 	<!--jQuery-->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<!--INclude your script file here -->
+	<script src="app/scripts/scripts.js" charset="utf-8"></script>
 </main>
 </body>
 </html>
